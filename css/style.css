@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "CircularSpotifyTxT Book Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-Book.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Book Italic Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-BookItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Light Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Light Italic Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Medium Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Medium Italic Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Black Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Black Italic Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Bold Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT Bold Italic Web";
+    url("../font/Circular_Sporify/fonts/CircularSpotifyTxT-BoldItalic.woff2") format("woff2");
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 1100px;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "CircularSpotifyTxT Book Web", sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    width: 70%;
+    position: relative;
+    background-color: #121212;
+    margin: 0 15%;
+    min-height: 100vh;
+}
+
+.searchBar\&Albums{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchBar{
+    display: flex;
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 50px;
+    padding: 3px 10px;
+    margin-top: 15px;
+}
+
+.searchBar>img{
+    max-height: 30px;
+    margin-right: 5px;
+}
+
+.searchBar>input,
+.searchBar>input:focus{
+    font-family: "CircularSpotifyTxT Book Web", sans-serif;
+    border: none;
+    outline: none;
+}
+
+.albumsContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.albumsContainer>p{
+    font-size: 1.8em;
+    align-self: flex-start;
+    padding-left: 30px;
+}
+
+.allAlbums{
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.album{
+    display: flex;
+    flex-direction: column;
+}
+
+.album>div{
+    background-color: #181818;
+    border-radius: 4px;
+    padding: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.album>div:hover{
+    background-color: #2e2e2e;
+    transition: .3s;
+}
+
+.album>div>img{
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, .3);
+}
+
+.album>ol{
+    position: absolute;
+    left: 6.5%;
+    top: 450px;
+    width: 80%;
+}
+
+.album>ol>li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.album>ol>li:hover{
+    background-color: #2e2e2e;
+}
+
+.album>ol>li>div{
+    display: flex;
+}
+
+.album>ol>li>div>p{
+    margin-right: 10px;
+}
+
